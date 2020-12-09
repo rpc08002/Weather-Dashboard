@@ -10,26 +10,33 @@
 </head>
 <body>
 
-    <div class="wrapper">
+    <div class="container-fluid">
+            <!-- Banner -->
             <h1 class="text-center display-4 lead">
               <strong>
                 <i class="fas fa-cloud-sun-rain"></i> Weather Dashboard</strong>
             </h1>
-        
+        <!-- Main Section Begins -->
         <div class="container">
             <div class="row">
                 <div class="col-sm">
                     <div class="sideBar">
                         <h5>Search for a City:</h5>
                     </div>
-                    <div class="card" style="width: 25rem;">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item"></li>
-                            <li class="list-group-item"></li>
-                            <li class="list-group-item"></li>
-                        </ul>
+
+                    <!-- Input Field for City Search -->
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control searchInput" placeholder="Enter City in U.S."
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary bg-primary searchCity" type="button"
+                                id="button-addon2"><i class="fas fa-search"></i></button>
+                        </div>
                     </div>
-                </div>   
+                        <!-- List of Search History Section  -->
+                        <div class="card" style="width: 25rem;">
+                            <ul class="list-group list-group-flush cityList"></ul>
+                        </div>
                 
                 <div class="col-lg">
                     <!-- Weather Details Will Get Dumped Here -->
