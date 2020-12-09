@@ -1,10 +1,16 @@
+// Variables
+
 let searchButton = $(".searchCity");
 
 let APIKey = "cadd0cedb3b71aa5a82adadf09d49ac6";
 
+for (var i = 0; i < localStorage.length; i++); {
 
+    var city = localStorage.getItem(i);
+    var cityName = $(".list-group").addClass ("list-group-item");
 
-function requestWeather() {
+    cityName.append("<li>" + city + "</li>");
+}
 
     let queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${APIKey}`;
 
@@ -14,9 +20,6 @@ function requestWeather() {
     }).then(function(response){
         console.log(response)
         var weatherApiResponse = response;
-
-        lon = response.coord.lon;
-        lat = response.coord.lat;
 
         queryURL = `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${APIKey}`;
 
