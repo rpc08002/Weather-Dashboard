@@ -15,15 +15,16 @@ for (var i = 0; i < localStorage.length; i++); {
 // Initial Count for Local Storage
 var keyCount = 0;
 
-searchButton.click(function {
+// When Search Buttong is Selected, Performs Ajax Functions
+searchButton.click(function () {
 
     var searchInput =$(".searchInput").val();
 
+    let urlCurrent = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput + "&appid=" + APIKey + "&units=imperial";
 
-})
+    let urlForecast = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchInput + "&appid=" + APIKey + "&units=imperial";
 
 
-    let queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${APIKey}`;
 
     $.ajax({
         url:queryURL,
