@@ -1,3 +1,5 @@
+let searchButton = $(".searchCity");
+
 let APIKey = "cadd0cedb3b71aa5a82adadf09d49ac6";
 
 
