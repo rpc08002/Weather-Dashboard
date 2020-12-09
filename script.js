@@ -24,16 +24,17 @@ searchButton.click(function () {
 
     let urlForecast = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchInput + "&appid=" + APIKey + "&units=imperial";
 
+    //If Else Statement for Ajax Functions
+    if (searchInput = "") {
+        console.log(searchInput);
+    } else { 
+        $.ajax({
+            url: urlCurrent,
+            method: "GET"
+        }).then(function (response){
+            var cityName = $(".list-group").addClass("list-group-item");
+            cityName.append("<li>" + response.name + "</li>");
 
-
-    $.ajax({
-        url:queryURL,
-        method: "GET"
-    }).then(function(response){
-        console.log(response)
-        var weatherApiResponse = response;
-
-        queryURL = `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${APIKey}`;
 
         $.ajax({
             url: queryURL,
