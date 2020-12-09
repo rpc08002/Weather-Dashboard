@@ -35,6 +35,12 @@ searchButton.click(function () {
             var cityName = $(".list-group").addClass("list-group-item");
             cityName.append("<li>" + response.name + "</li>");
 
+            var local = localStorage.setItem(keyCount, response.name);
+            keyCount = keyCount + 1;
+
+            var currentCard = $(".currentCard").append("<div>").addClass("card-body");
+            currentCard.empty();
+
 
         $.ajax({
             url: queryURL,
