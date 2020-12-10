@@ -3,10 +3,11 @@ Server-Side APIs
 
 ## Ryan Curtin's Weather Dashboard Links:
 * [Weather Dashboard GitHub Page](https://github.com/rpc08002/Weather-Dashboard)
-* [Weather Dashboard Live Webpage]()
+* [Weather Dashboard Live Webpage](https://rpc08002.github.io/Weather-Dashboard/)
 
 ### Mock-Up
-![Weather Dashboard]()
+![Weather Dashboard](Assets/Screen Shot 2020-12-10 at 6.15.18 PM.png)
+![Weather Dashboard](Assets/Screen Shot 2020-12-10 at 6.15.35 PM.png)
 
 ### Summary
 * Weather Dashboard provides the current forecast and five day forecast for your convenience of any city in the United States.
