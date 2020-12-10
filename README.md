@@ -23,3 +23,6 @@ Server-Side APIs
 * JavaScript Page
 * CSS Page
 * OpenWeatherMap API
+
+### Authors
+* Ryan Curtin
