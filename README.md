@@ -6,8 +6,8 @@ Server-Side APIs
 * [Weather Dashboard Live Webpage](https://rpc08002.github.io/Weather-Dashboard/)
 
 ### Mock-Up
-![Weather Dashboard](Assets/Screen Shot 2020-12-10 at 6.15.18 PM.png)
-![Weather Dashboard](Assets/Screen Shot 2020-12-10 at 6.15.35 PM.png)
+![Weather Dashboard](Assets/mockup.png)
+![Weather Dashboard](Assets/mockup2.png)
 
 ### Summary
 * Weather Dashboard provides the current forecast and five day forecast for your convenience of any city in the United States.
