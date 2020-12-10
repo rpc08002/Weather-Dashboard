@@ -2,3 +2,7 @@ h1 {
     background-color: navy;
     color: white;
 }
+
+ul {
+    list-style: none;
+}
