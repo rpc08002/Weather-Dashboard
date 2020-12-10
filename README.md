@@ -2,8 +2,8 @@
 Server-Side APIs
 
 ## Ryan Curtin's Weather Dashboard Links:
-*
-*
+* [Weather Dashboard GitHub Page](https://github.com/rpc08002/Weather-Dashboard)
+* [Weather Dashboard Live Webpage]()
 
 ### Mock-Up
 ![Weather Dashboard]()
