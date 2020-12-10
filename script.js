@@ -71,7 +71,7 @@ searchButton.click(function () {
                 currentTemp.append(currentUV);
                 // currentUV.append("UV Index: " + response.value);
             });
-            
+
         });
 
             // Ajax Call For 5 Day Forecast
@@ -95,4 +95,5 @@ searchButton.click(function () {
                 })
     
             });
-    }
+        }
+    });
