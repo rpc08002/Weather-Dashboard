@@ -40,16 +40,21 @@ searchButton.click(function () {
 
             var currentCard = $(".currentCard").append("<div>").addClass("card-body");
             currentCard.empty();
+            var currentName = currentCard.append("<p>");
+            currentCard.append(currentName);
 
+            // Adjust Date 
+            var timeUTC = new Date(response.dt * 1000);
+            currentName.append(response.name + " " + timeUTC.toLocaleDateString("en-US"));
+            currentName.append(`<img src="https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png">`);
+            // Add Temp 
+            var currentTemp = currentName.append("<p>");
+            // .addClass("card-text");
+            currentName.append(currentTemp);
+            currentTemp.append("<p>" + "Temperature: " + response.main.temp + "</p>");
+            currentTemp.append("<p>" + "Humidity: " + response.main.humidity + "%" + "</p>");
+            currentTemp.append("<p>" + "Wind Speed: " + response.wind.speed + "</p>");
 
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        }).then(function(response){
-            var uvApiResponse = response;
-            console.log("UV", uvApiResponse );
-            renderCurrentWeather(weatherApiResponse, uvApiResponse);
-        })
-    });
+            // UV Index URL
+            var urlUV = `https://api.openweathermap.org/data/2.5/uvi?appid=b8ecb570e32c2e5042581abd004b71bb&lat=${response.coord.lat}&lon=${response.coord.lon}`;
 
-};
